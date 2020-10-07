@@ -117,5 +117,14 @@
     <ClCompile Include="보석도두.cpp">
       <Filter>리소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="책 나눠주기 .cpp">
+      <Filter>리소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="멀티탭 스케줄링.cpp">
+      <Filter>리소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="숫자의 신.cpp">
+      <Filter>리소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

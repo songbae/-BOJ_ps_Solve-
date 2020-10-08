@@ -13,7 +13,7 @@ vector<pair<int,pair<int,int>>>v[MAX][MAX];
 priority_queue<pair<int,tuple<int,int,int>>>q;
 void dfs() {
 	while (!q.empty()) {//다익스트라
-		int cost = -q.top().first;
+		int cost = -q.top().first;// 처음 가중치 0으로 시작 
 		int x = get<1>(q.top().second);
 		int y = get<2>(q.top().second);
 		int nowd = get<0>(q.top().second);//현재 방향 
@@ -23,10 +23,10 @@ void dfs() {
 			int ny = v[x][y][i].second.second;//다음위치
 			int nextd = v[x][y][i].first;
 			int ncost = 1;
-			if (abs(nextd - nowd) > 2)ncost++;//다음위치와 현재위치의 방향이 다를떄
+			if (abs(nextd - nowd) == 3)ncost++;// 다음위치와 현재위치의 방향이 다를떄
 			else ncost += abs(nextd - nowd);// 같으거나 차이가 2보다적을떄 
-			if (nx == endx && ny == endy) {// 만약 다음위치가 목표값일 때
-				if (abs(nextd - ed) > 2)ncost++;//목표위치의 방향과 현재의 방향 비교 
+			if (nx == endx && ny == endy&&dist[x][y]!=INF) {// 만약 다음위치가 목표값일 때
+				if (abs(nextd - ed)== 3)ncost++;//목표위치의 방향과 현재의 방향 비교 
 				else ncost += abs(nextd - ed);// 목표위치의 방향과 현재 방향 비교 
 			}
 			if (dist[nx][ny] > dist[x][y] + ncost) {
@@ -57,10 +57,10 @@ int main() {
 		}
 	}
 	int stx, sty, std;
-	cin >> stx >> sty >> std;
-	cin >> endx >> endy >> ed;
+	cin >> stx >> sty >> std;// 시작 x,y , d 방향 
+	cin >> endx >> endy >> ed;//끝 x,y d 방향 
 	if (std == 1) std -= 1;// 시작 방향과 끝방향을 0,1,2,3에맞게 변경 
-	else if (std == 2)std = 2;
+	else if (std == 2)std = 2;// 좌표변환 
 	else if (std == 3)std -= 2;
 	else if (std == 4)std -= 1;
 	if (ed == 1) ed -= 1;
@@ -69,14 +69,21 @@ int main() {
 	else if (ed == 4)ed -= 1;
 	dist[stx][sty] = 0;
 	q.push({ 0,{std, stx, sty } });
-	if (stx == endx && sty == endy) {
-		if (std == ed)cout << "0";
+	if (stx == endx && sty == endy) {//만약에 시작과 끝위치가 같다면 
+		if (std == ed)cout << "0";//방향이 같다면 0출력
 		else {
-			if (abs(std - ed) > 2)cout << "1";
-			else cout << abs(std - ed);
+			if (abs(std - ed) > 2)cout << "1";//방향이 다르다면 다른만큼 가중치추가
+			else cout << abs(std - ed);//가중치만큼 출력 
 		}
 		return 0;
 	}
-	dfs();
+	dfs();//다익스트라 ~
+	for (int i = 1; i <= n; i++) {
+		for (int j = 1; j <= m; j++) {
+			if (dist[i][j] == INF)cout << "0" << " ";
+			else cout << dist[i][j] << " ";
+		}
+		cout << endl;
+	}
 	cout << dist[endx][endy];
 }

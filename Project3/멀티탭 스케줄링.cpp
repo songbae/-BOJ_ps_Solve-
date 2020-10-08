@@ -20,7 +20,7 @@ int main() {
 		ok = false; int num = 0;
 		memset(check2, false, sizeof(check2));
 		if (check[next])continue;//¿ÃπÃ ≈«ø° ≤»«Ù¿÷¥Ÿ∏È pass
-		for (int j = i + 1; j <k; j++) {
+		for (int j = i + 1; j < k; j++) {
 			if (check[v[j]])check2[v[j]]++;
 		}
 		while (1) {

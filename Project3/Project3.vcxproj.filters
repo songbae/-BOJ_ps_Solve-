@@ -234,5 +234,17 @@
     <ClCompile Include="16234_인구이동.cpp">
       <Filter>리소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="셀프넘버.cpp">
+      <Filter>리소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="1904_01타일.cpp">
+      <Filter>리소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="20055.cpp">
+      <Filter>리소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="20056_마법사 상어와 파이어볼.cpp">
+      <Filter>리소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

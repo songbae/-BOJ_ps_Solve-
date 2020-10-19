@@ -151,7 +151,10 @@
     <ClCompile Include="20055.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="20056_마법사 상어와 파이어볼.cpp" />
+    <ClCompile Include="20056_마법사 상어와 파이어볼.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="20057_마법사 상어와 토네이도.cpp" />
     <ClCompile Include="gcd합.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>

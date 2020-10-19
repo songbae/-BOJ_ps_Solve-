@@ -246,5 +246,8 @@
     <ClCompile Include="20056_마법사 상어와 파이어볼.cpp">
       <Filter>리소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="20057_마법사 상어와 토네이도.cpp">
+      <Filter>리소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

@@ -246,7 +246,13 @@
     <ClCompile Include="20056_마법사 상어와 파이어볼.cpp">
       <Filter>리소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="20057_마법사 상어와 토네이도.cpp">
+    <ClCompile Include="16637_괄호 추가하기.cpp">
+      <Filter>리소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="20058_마법사 상어와 파이어스톰.cpp">
+      <Filter>리소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="레이저통신.cpp">
       <Filter>리소스 파일</Filter>
     </ClCompile>
   </ItemGroup>

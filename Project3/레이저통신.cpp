@@ -53,12 +53,6 @@ int main() {
 			if (arr[i][j] == 'C')v.push_back({ i,j });
 		}
 	}
-	for (int i = 0; i < n; i++) {
-		for (int j = 0; j < m; j++) {
-			cout << arr[i][j];
-		}
-		cout << endl;
-	}
 	bfs(v[0], v[1]);
 	cout << ans;
 }

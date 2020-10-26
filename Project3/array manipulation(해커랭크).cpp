@@ -8,7 +8,7 @@ vector<vector<int>>queries;
 int main()
 {
     cin >> n >> m;
-    queries.resize(n);
+    queries.resize(m);
     for (int i = 0; i < m; i++){
         int a, b, c; cin >> a >> b >> c;
         queries[i].push_back(a);

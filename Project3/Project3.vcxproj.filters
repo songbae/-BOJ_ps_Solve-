@@ -258,9 +258,6 @@
     <ClCompile Include="NHN모의시험.cpp">
       <Filter>리소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="배열 왼쪽회전(해커랭크).cpp">
-      <Filter>리소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="New Year Chaos(해커랭크).cpp">
       <Filter>리소스 파일</Filter>
     </ClCompile>
@@ -397,6 +394,42 @@
       <Filter>리소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="2637_장난감조립.cpp">
+      <Filter>리소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="해커랭크_pairs.cpp">
+      <Filter>리소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="해커랭크_triple sum.cpp">
+      <Filter>리소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="해커랭크_swap nodes.cpp">
+      <Filter>리소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="해커랭크_배열 왼쪽회전.cpp">
+      <Filter>리소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="해커랭크-Minimum Time Requiredcpp.cpp">
+      <Filter>리소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="해커랭크%28미해결%29 maximum_sub array sum.cpp">
+      <Filter>리소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="1655_가운데를 말해요.cpp">
+      <Filter>리소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="3111_검열%28미해결%29.cpp">
+      <Filter>리소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="카카오 4.cpp">
+      <Filter>리소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="카카오5.cpp">
+      <Filter>리소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="9251_LCS.cpp">
+      <Filter>리소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="9252_LCS2.cpp">
       <Filter>리소스 파일</Filter>
     </ClCompile>
   </ItemGroup>

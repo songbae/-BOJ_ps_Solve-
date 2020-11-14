@@ -8,7 +8,7 @@ int depth[101];
 vector<pair<int, int>> toy[101];
 queue<int>q;
 bool check[101];
-int num[101];
+int num[101][101];
 void topology() {
 	while (!q.empty()) {
 		int x = q.front();
@@ -43,6 +43,7 @@ int main() {
 		int x = i;
 		int cnt = 1;
 		for (int j = i + 1; j <= n; j++) {
+			if (check[j])continue;
 			for (int k = 0; k < toy[j].size(); k++) {
 				if (x == toy[j][k].first) {
 					x = j;
@@ -50,8 +51,8 @@ int main() {
 					break;
 				}
 			}
+		num[j][i] += cnt;
 		}
-		num[i] += cnt;
 	}
 	for (int i = 1; i <= n; i++) {
 		if (!check[i])continue;

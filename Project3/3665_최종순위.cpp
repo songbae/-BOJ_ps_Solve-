@@ -10,16 +10,12 @@ bool check[501];
 vector<int>ans;
 bool quest;
 void topology(int st) {
-	int cnt = 0;
 	for (int i = 0; i < v[st].size(); i++) {//연결된 엣지를 탐색
 		int nx = v[st][i];
 		if (--depth[nx] == 0) {// 뎁스를 하나씩 빼준다
-			cnt++;// 
 			ans.push_back(nx);//0이면 답에 넣어준다
 		}
 	}
-	if (cnt > 1)quest = true;// cnt가 2이상이면 동시에 2개이상의 수가 발생하므로 ?  출력
-
 }
 int main() {
 	cin >> n;
@@ -60,7 +56,6 @@ int main() {
 	}
 		
 		if (ans.size() != m)cout << "IMPOSSIBLE";
-		else if (quest)cout << "?";
 		else for (auto T : ans)cout << T << " ";
 		cout << endl;
 	}

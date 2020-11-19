@@ -432,5 +432,20 @@
     <ClCompile Include="9252_LCS2.cpp">
       <Filter>리소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="류호석1번.cpp">
+      <Filter>리소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="류호석_2.cpp">
+      <Filter>리소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="류호석3.cpp">
+      <Filter>리소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="20167_꿈틀꿈틀 호석애벌레.cpp">
+      <Filter>리소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="20168_골목대장호석.cpp">
+      <Filter>리소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
